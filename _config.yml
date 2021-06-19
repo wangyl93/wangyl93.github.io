@@ -18,8 +18,8 @@ favicon: favicon.png
 repository: wangyl93/wangyl93.github.io
 github_url: https://github.com/wangyl93
 cnblog_url: http://www.cnblogs.com/ityouknow
-url: http://www.ityouknow.com
-enforce_ssl: ityouknow.com
+url: http://wangyl93.github.io
+enforce_ssl: wangyl93.github.io
 
 ## Gem
 plugins:
