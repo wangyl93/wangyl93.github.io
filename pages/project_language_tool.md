@@ -16,7 +16,4 @@ def helloworld():
     print("hello, world!")
 ```
 
-$$
-\mathbf{V}_1\times\mathbf{V}_2 = \mathbf{X}_3
-$$
 
