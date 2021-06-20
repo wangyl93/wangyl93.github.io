@@ -177,6 +177,7 @@ gitment:
         client_secret: 0965d3e92275d1eeeb0b6c5805ac330b42e44281
 # https://github.com/gitalk/gitalk#install
 gitalk:
+    enable: true
     owner: wangyl93
     repo: wangyl93.github.io
     clientID: 32a9035277eec0fdae21
