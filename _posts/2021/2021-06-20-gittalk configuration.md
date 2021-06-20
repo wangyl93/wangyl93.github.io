@@ -22,7 +22,7 @@ gitalk:
 
 2. 以上clientID clientSecret 需要在你的github 里面的Settings--> Developer Settings -> OAuth apps 里面添加 
 
-![image-20210620123859694](C:\java_restful\wangyl93.github.io\assets\images\2021\springboot\image-20210620123859694.png)
+![image-20210620123859694](http://wangyl93.github.io/assets\images\2021\springboot\image-20210620123859694.png)
 
 解释一下：
 
@@ -34,7 +34,7 @@ gitalk:
 
 同时生成你的 Client ID and Client secrets
 
-![image-20210620124110429](C:\java_restful\wangyl93.github.io\assets\images\2021\springboot\image-20210620124110429.png)
+![image-20210620124110429](http://wangyl93.github.io/assets\images\2021\springboot\image-20210620124110429.png)
 
 3.  gitalk.js 的修改
 
@@ -52,7 +52,7 @@ gitalk:
 
 项目--> settings--> issues
 
-![image-20210620125557621](C:\java_restful\wangyl93.github.io\assets\images\2021\image-20210620125557621.png)
+![image-20210620125557621](http://wangyl93.github.io/assets\images\2021\image-20210620125557621.png)
 
 5. 测试你的评论吧
 
