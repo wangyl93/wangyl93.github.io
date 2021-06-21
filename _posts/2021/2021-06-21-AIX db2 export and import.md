@@ -14,7 +14,7 @@ excerpt: AIX上DB2 数据的导出和导入
 ```shell
 db2 export to /tmp/rfc/ALPHA.DLQ.QUEUE.del of del "select * from wledge.user where mandt='330'"
 --打包
-tar -cvf ALPHA.DLQ.QUEUE.txt.tar ALPHA.DLQ.QUEUE.del
+tar -cvf ALPHA.DLQ.QUEUE.del.tar ALPHA.DLQ.QUEUE.del
 --压缩
 gzip ALPHA.DLQ.QUEUE.del.tar
 -- 复制tar 文件到另外一个db server 上
