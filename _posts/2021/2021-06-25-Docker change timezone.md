@@ -37,6 +37,17 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN echo 'Asia/Shanghai' > /etc/timezone
 ```
 
+Dockerfile中配置时区
+在Dockerfile中，可以通过如下方式添加中国时区：
+```shell
+FROM docker.io/centos
+MAINTAINER DAVID
+
+# 使用RUN命令设置时区
+RUN cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime && echo 'Asia/Shanghai'>/etc/timezone
+```
+
+
 # Run模式
 
 如果用的是run运行，那么加上如下2句代码在你的启动命令中
@@ -58,6 +69,21 @@ docker run  -v /etc/timezone:/etc/timezone -v /etc/localtime:/etc/localtime ....
 docker exec -it docker-name /bin/bash
 ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 echo 'Asia/Shanghai' > /etc/timezone
+```
+
+# docker-compose.yaml中配置时区
+但如果docker程序是以docker-compose.yaml构建，那么时区这块需要如何设置呢？
+
+经过实测，如下两种方式都可行。
+```shell
+方式一：
+environment:
+  - SET_CONTAINER_TIMEZONE=true
+  - CONTAINER_TIMEZONE=Asia/Shanghai
+	  
+方式二：
+environment:
+  - TZ=Asia/Shanghai
 ```
 
 不积跬步，无以至千里。不积小流，无以成江海。
