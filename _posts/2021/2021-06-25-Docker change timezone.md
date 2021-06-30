@@ -78,12 +78,12 @@ echo 'Asia/Shanghai' > /etc/timezone
 ```shell
 方式一：
 environment:
-  - SET_CONTAINER_TIMEZONE=true
-  - CONTAINER_TIMEZONE=Asia/Shanghai
+  SET_CONTAINER_TIMEZONE: true
+  CONTAINER_TIMEZONE: Asia/Shanghai
 	  
 方式二：
 environment:
-  - TZ=Asia/Shanghai
+  TZ: Asia/Shanghai
 ```
 
 不积跬步，无以至千里。不积小流，无以成江海。
